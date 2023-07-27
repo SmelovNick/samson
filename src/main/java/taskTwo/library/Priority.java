@@ -1,4 +1,4 @@
-package taskTwo;
+package taskTwo.library;
 
 public enum Priority {
     BLOCKER,

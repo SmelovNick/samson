@@ -1,4 +1,4 @@
-package taskTwo;
+package taskTwo.implementation;
 
 import org.testng.*;
 
@@ -15,7 +15,7 @@ public class TestMethodListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        System.out.printf("The test has been failed...\n", result.getName());
+        System.out.printf("The test %s has been failed...\n", result.getName());
     }
 
     @Override
@@ -25,12 +25,12 @@ public class TestMethodListener implements ITestListener {
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-        System.out.printf("The test has been failed but success within percentage...\n", result.getName());
+        System.out.printf("The test %s has been failed but success within percentage...\n", result.getName());
     }
 
     @Override
     public void onTestFailedWithTimeout(ITestResult result) {
-        System.out.printf("The test has been failed with timeout...\n", result.getName());
+        System.out.printf("The test %s has been failed with timeout...\n", result.getName());
     }
 
     @Override
